@@ -1,0 +1,44 @@
+{
+  "name": "dominaclarity",
+  "version": "1.0.0",
+  "description": "Domina Clarity Porfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass assets/sass/main.scss assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dommeclarity/dominaclarity.git"
+  },
+  "keywords": [
+    "bdsm",
+    "fetish",
+    "domina"
+  ],
+  "author": "dominaclarity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dommeclarity/dominaclarity/issues"
+  },
+  "homepage": "https://github.com/dommeclarity/dominaclarity#readme",
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
